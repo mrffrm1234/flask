@@ -63,7 +63,7 @@ def shortessturl():
         ret = (basedigits[m%BASE])+ret
         m = int(m/BASE)
     shortcode = ret
-    final_short_url = 'http://127.0.0.1:5000/'+ str(shortcode)
+    final_short_url = 'tinyfi.herokuapp.com'+ str(shortcode)
 
     return render_template("shorturl.html", final_short_url=final_short_url)
 
